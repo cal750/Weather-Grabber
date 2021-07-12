@@ -13,6 +13,7 @@ body {
   display: flex;
   font-size: 20px;
   font-weight: 300;
+  background-color: snow;
 }
 
 .header {
@@ -38,6 +39,7 @@ h1 {
   list-style: none;
   font-size: 20px;
   background-color: snow;
+  height: 100%;
 }
 
 .container {
@@ -56,6 +58,8 @@ button {
   height: 100%;
   text-align: center;
   background-color: snow;
+  width: 100%;
+  height: 40px;
 }
 
 .btn-area {
@@ -63,7 +67,7 @@ button {
   height: 30px;
   border: solid;
   border-color: black;
-  background-color: snow;
+  background-color: steelblue;
   margin: 10px;
   display: flex;
   flex: flex;
@@ -116,7 +120,7 @@ button {
 }
 
 .bottom-box {
-  width: 60%;
+  width: 100%;
   height: 22%;
   margin: 10px;
   height: flex;
@@ -147,4 +151,5 @@ button {
   text-align: left;
   font-size: 20px;
   background-color: snow;
+  font-weight: bold;
 }
