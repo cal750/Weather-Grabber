@@ -1,0 +1,38 @@
+body {
+  flex: flex;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  flex: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  border: solid;
+  border-color: black;
+}
+
+button {
+  display: flex;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.btn-area {
+  width: 150px;
+  height: 30px;
+  border: solid;
+  border-color: black;
+  background-color: burlywood;
+  margin: 10px;
+  display: flex;
+  flex: flex;
+  justify-content: start;
+  flex-direction: column;
+}
