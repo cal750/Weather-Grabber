@@ -4,11 +4,12 @@ var apiKey = "3e2723315149c3458740f87851d85a18";
 
 var formSubmitHandler = function(event) {
     event.preventDefault();
-    let city = cityInputEl.value;
+    let City = cityInputEl.value;
     console.log('cityInputEl.nodevalue ' + cityInputEl.value);
-    if (city) {
-        getWeatherData(city);
-        console.log('city ' + city);
+    if (City) {
+        getWeatherData(City);
+        console.log('city ' + City);
+        getWeatherForecast(City);
     }
 }
 
@@ -27,9 +28,9 @@ var getWeatherData = function(city) {
           console.log('humidity ' + data.list[0].main.humidity + '%');
           var unixTime = moment.unix(data.list[0].dt).format("DD/MM/YYYY");
           console.log('date ' + unixTime);
-          lat = data.list[0].coord.lat;
+          var lat = data.list[0].coord.lat;
           console.log("lat " + lat);
-          lon = data.list[0].coord.lon;
+          var lon = data.list[0].coord.lon;
           console.log("lon " + lon);
           
           var pageCity = document.querySelector('.city').textContent = ('City ' + data.list[0].name);
@@ -45,8 +46,9 @@ var getWeatherData = function(city) {
     });
   }
 
-var getWeatherForecast = function() {
-  let apiUrl2 = 'https://api.openweathermap.org/data/2.5/forecast/daily?q=' + City + "&units=metric&cnt=5&appid=" + apiKey;
+var getWeatherForecast = function(City) {
+  let apiUrl2 = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&exclude=daily&appid=' + apiKey;
+
     fetch(apiUrl2)
     .then(function (response) {
       if (response.ok) {
