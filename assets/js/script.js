@@ -32,7 +32,12 @@ var getWeatherData = function(city) {
           lon = data.list[0].coord.lon;
           console.log("lon " + lon);
           
-          
+          var pageCity = document.querySelector('.city').textContent = ('City ' + data.list[0].name);
+          var pageTemp = document.querySelector('.temp').textContent = ('The temperature is ' + data.list[0].main.temp + '°C');
+          var pageHumid = document.querySelector('.humid').textContent = ('The humidity is at ' + data.list[0].main.humidity + '%');
+          var pageWind = document.querySelector('.wind').textContent = ('The wind is blowing at ' + data.list[0].wind.speed + 'KM/H');
+          var pageLat = document.querySelector('.lat').textContent = ('The latitude is ' + lat);
+          var pageLon = document.querySelector('.lon').textContent = ('The longitude is ' + lon);
         });
       } else {
         alert('Error: ' + response.statusText);
@@ -40,9 +45,7 @@ var getWeatherData = function(city) {
     });
   }
 
-  var sendToPage = function() {
-    
-  }
+  
   
 
 
