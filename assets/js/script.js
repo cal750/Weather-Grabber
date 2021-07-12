@@ -1,8 +1,6 @@
-var searchFormEl = document.getElementById('#search-box');
-var cityInputEl = document.getElementById('#city-input');
+var searchFormEl = document.querySelector('#search-box');
+var cityInputEl = document.querySelector('#city-input');
 var apiKey = "3e2723315149c3458740f87851d85a18";
-var lat;
-var lon;
 
 var formSubmitHandler = function(event) {
     event.preventDefault();
@@ -41,5 +39,12 @@ var getWeatherData = function(city) {
       }
     });
   }
+
+  var sendToPage = function() {
+    
+  }
+  
+
+
     
 searchFormEl.addEventListener ('submit', formSubmitHandler);
