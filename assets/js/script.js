@@ -45,15 +45,20 @@ var getWeatherData = function(city) {
     });
   }
 
-var getWeatherForecast = function(city) {
-  let apiUrl2 = "api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&cnt=5&appid" + apiKey;
+var getWeatherForecast = function() {
+  let apiUrl2 = 'https://api.openweathermap.org/data/2.5/forecast/daily?q=' + City + "&units=metric&cnt=5&appid=" + apiKey;
     fetch(apiUrl2)
     .then(function (response) {
       if (response.ok) {
         console.log(response);
         response.json().then(function (data) {
           console.log(data);
-        })
+          console.log('City' + data.list[0].name);
+          console.log('temp ' + data.list[0].main.temp);
+        });
+        }
+        else {
+          alert('Error: ' + response.statusText);
       }
     });
 }
