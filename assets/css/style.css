@@ -1,3 +1,12 @@
+* {
+  background-color: slategray;
+  color: black;
+}
+
+form {
+  background-color: #efefef;
+}
+
 body {
   flex: flex;
   flex-wrap: wrap;
@@ -17,11 +26,18 @@ body {
   display: flex;
   justify-content: start;
   flex-direction: row;
+  margin: 0px;
+  background-color: snow;
+}
+
+h1 {
+  background-color: snow;
 }
 
 .history {
   list-style: none;
   font-size: 20px;
+  background-color: snow;
 }
 
 .container {
@@ -32,16 +48,14 @@ body {
   display: flex;
   justify-content: start;
   flex-direction: column;
-  border: solid;
-  border-color: black;
+  background-color: snow;
 }
 
 button {
   display: flex;
   height: 100%;
-  background-color: black;
-  color: white;
   text-align: center;
+  background-color: snow;
 }
 
 .btn-area {
@@ -49,7 +63,7 @@ button {
   height: 30px;
   border: solid;
   border-color: black;
-  background-color: burlywood;
+  background-color: snow;
   margin: 10px;
   display: flex;
   flex: flex;
@@ -70,6 +84,7 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 5px;
+  background-color: snow;
 }
 
 .left-box {
@@ -83,6 +98,7 @@ button {
   margin-left: 10px;
   border: solid;
   border-color: black;
+  background-color: snow;
 }
 
 .main-box {
@@ -96,6 +112,7 @@ button {
   width: 60%;
   margin: 10px;
   height: 60%;
+  background-color: snow;
 }
 
 .bottom-box {
@@ -109,16 +126,19 @@ button {
   flex-direction: column;
   border: solid;
   border-color: black;
+  background-color: snow;
 }
 
 .text-area {
   display: inline-block;
+  background-color: snow;
 }
 
 .city {
   width: 90%;
   height: 80px;
   font-size: 30px;
+  background-color: snow;
 }
 
 #small {
@@ -126,4 +146,5 @@ button {
   height: 30px;
   text-align: left;
   font-size: 20px;
+  background-color: snow;
 }
