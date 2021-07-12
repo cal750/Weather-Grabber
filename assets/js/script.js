@@ -1,5 +1,5 @@
-var searchFormEl = document.querySelector('#search-form');
-var cityInputEl = document.querySelector('#city');
+var searchFormEl = document.getElementById('#search-box');
+var cityInputEl = document.getElementById('#city-input');
 var apiKey = "3e2723315149c3458740f87851d85a18";
 var lat;
 var lon;
@@ -41,7 +41,5 @@ var getWeatherData = function(city) {
       }
     });
   }
-
-  var getFiveDayForecast = function()
     
 searchFormEl.addEventListener ('submit', formSubmitHandler);
